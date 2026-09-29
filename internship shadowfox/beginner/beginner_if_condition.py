@@ -1,0 +1,52 @@
+# Task 4: If Condition
+
+# Exercise 1: BMI Category
+
+height = float(input("Enter height in meters: "))
+weight = float(input("Enter weight in kilograms: "))
+
+bmi = weight / (height ** 2)
+
+print("Your BMI is:", bmi)
+
+if bmi >= 30:
+    print("Category: Obesity")
+elif bmi >= 25:
+    print("Category: Overweight")
+elif bmi >= 18.5:
+    print("Category: Normal")
+else:
+    print("Category: Underweight")
+
+print("--------------------------------------------------")
+# Exercise 2: Find the country of a city
+
+Australia = ["Sydney", "Melbourne", "Brisbane", "Perth"]
+UAE = ["Dubai", "Abu Dhabi", "Sharjah", "Ajman"]
+India = ["Mumbai", "Bangalore", "Chennai", "Delhi"]
+
+city = input("Enter a city name: ")
+
+if city in Australia:
+    print(city, "is in Australia")
+elif city in UAE:
+    print(city, "is in UAE")
+elif city in India:
+    print(city, "is in India")
+else:
+    print("City not found")
+
+print("--------------------------------------------------")
+# Exercise 3: Check if two cities belong to the same country
+
+city1 = input("Enter the first city: ")
+city2 = input("Enter the second city: ")
+
+if city1 in Australia and city2 in Australia:
+    print("Both cities are in Australia")
+elif city1 in UAE and city2 in UAE:
+    print("Both cities are in UAE")
+elif city1 in India and city2 in India:
+    print("Both cities are in India")
+else:
+    print("They don't belong to the same country")
